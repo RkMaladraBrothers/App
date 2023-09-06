@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="https://itiappstore.w3spaces.com/logo.png" />
+  <link href='https://itiappstore.w3spaces.com/logo.png' rel='image_src' />
+  <meta property="og:title" content="ITI App Store" />
+  <meta property="og:description" content="An application that works without internet, is available for free and is ad-free" />
+  <title>ITI App Store</title>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+  text-shadow: .5px .5px 0 #cccc00;
+}
+
+body{
+  font-family: serif;
+}
+
+#head{
+  position: fixed;
+  width: 100vw;
+  height: auto;
+  padding-bottom: 2vw;
+  background-color: white;
+  box-shadow: 1px 2px 10px black;
+  z-index: 1;
+}
+
+#head>p{
+  color: firebrick;
+  text-shadow: .5px .5px 0 black;
+  font-size: 9vw;
+  font-weight: bold;
+  margin-left: 3vw;
+}
+
+#n{
+  display: none;
+}
+
+#pl{
+  color: red;
+  font-size: 20vw;
+  font-weight: 300;
+}
+
+#cu{
+  width: 100vw;
+  height: auto;
+  background-color: navajowhite;
+  text-shadow: 1px 1px 0 #ffd699;
+}
+
+#cu>p {
+  margin-bottom: 3vw;
+  font-size: 5vw;
+  font-weight: bold;
+  margin-left: 3vw;
+}
+
+#bl{
+  color: blue;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+#cu>p:nth-child(1){
+  color: #02CD00;
+  font-size: 8vw;
+  font-weight: bold;
+  margin-left: 3vw;
+}
+
+.ml{
+  user-select: all;
+}
+
+.harm{
+  width: 100vw;
+  height: auto;
+  background-color: gold;
+}
+
+#hp{
+  height: 0;
+  overflow: hidden;
+  background-color: gold;
+  text-shadow: .5px .5px .5px #b39800;
+  font-size: 6vw;
+  font-weight: bold;
+}
+
+#db{
+  color: red;
+  text-shadow: .5px .5px .5px #b39800;
+  font-size: 6vw;
+  margin-left: 3vw;
+}
+
+#ex{
+  color: blue;
+  text-shadow: .5px .5px .5px #b39800;
+}
+
+#di{
+  color: #cc0066;
+  text-shadow: 1px 1px .5px #b39800;
+  margin-left: 3vw;
+}
+
+#iar{
+  width: 93vw;
+  color: black;
+  background-color: gold;
+  text-shadow: .5px .5px .5px #b39800;
+  border: none;
+  outline: none;
+  font-size: 6vw;
+  font-weight: bold;
+  margin-left: 3vw;
+  padding: 2vw 2vw;
+  transition: 0.4s;
+}
+
+#harm{
+  width: 85vw;
+  height: auto;
+  margin-left: 7vw;
+}
+
+#dis{
+  margin-left: 4vw;
+  width: 90vw;
+  height: auto;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+#r{
+  color: #D80000;
+  font-size: 8vw;
+  font-weight: bolder;
+}
+
+#do{
+  width: 80vw;
+  height: auto;
+  margin: 10vw 0 0 10vw;
+  color: white;
+  background-color: blue;
+  font-size: 8vw;
+  border: 1px solid navy;
+  border-radius: 4px;
+  padding: 1vw 1vw;
+}
+
+#box{
+  display: flex;
+}
+
+#box>img{
+  width: 30vw;
+  height: auto;
+  margin: 4vw 4vw;
+}
+
+#box>p{
+  margin-top: 4vw;
+  font-weight: bolder;
+  font-size: 10vw;
+}
+
+#v{
+  color: limegreen;
+}
+
+#more{
+  font-size: 15vw;
+  font-weight: bold;
+}
+
+.scrollbox1{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 400px;
+  white-space: nowrap;
+  padding: 2vw;
+}
+
+.scrollbox-item1{
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 0 2vw 0 0;
+  padding: 1vw;
+  box-sizing: border-box;
+  vertical-align: top;
+  white-space: normal;
+  text-align: justify;
+  overflow: wrap;
+}
+
+.scrollbox{
+  background-color: black;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 400px;
+  white-space: nowrap;
+  padding: 2vw;
+}
+
+.scrollbox-item{
+  display: flex;
+  position: relative;
+  width: 300vw;
+  height: auto;
+  margin: 0 2vw 0 0;
+  padding: 1vw;
+  box-sizing: border-box;
+  vertical-align: top;
+  white-space: normal;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.box{
+  margin-left: 5vw;
+  width: 46vw;
+  height: auto;
+}
+
+.co1{
+  background-color: maroon;
+}
+
+.co2{
+  background-color: wheat;
+}
+
+.co3{
+  background-color: gold;
+}
+
+.co4{
+  background-color: navy;
+}
+
+.box>img{
+  margin-top: 2vw;
+  margin-left: 3vw;
+  width: 40vw;
+  height: auto;
+}
+
+.box>#ash{
+  font-size: 6vw;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  padding: 2vw 4vw;
+}
+
+.box>#har{
+  font-size: 6vw;
+  font-weight: bold;
+  color: firebrick;
+  text-align: center;
+  padding: 2vw 4vw;
+}
+
+.box>#pra{
+ font-size: 6vw;
+ font-weight: bold;
+ color: firebrick;
+ text-align: center;
+ padding: 2vw 4vw;
+}
+
+.box>#Rk{
+  color: white;
+  font-size: 6vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 2vw 4vw;
+}
+
+  </style>
+</head>
+
+<body>
+  <p id="n"></p>
+  <div id="head">
+    <p>ITI App Store</p>
+  </div><br><br><br>
+<div id="box">
+<img src="logo.png">
+&nbsp;&nbsp;<p>QAF_2 <br><span id="v">v1.0</span><br>Size: 13MB</p>
+</div>
+<button id="do" onclick="window.open('https://drive.google.com/file/d/17JAClaw4i_M7tuYiByl3On2st1QZfmv_/view?usp=drivesdk');">Download</button><br /><br />
+
+ <button id="iar" onclick="ex();"> 👨🏻‍💻 Information about risk :- <br><span id="pl">+</span></button>
+ <div id="hp"><br>
+ <p id="db">☝🏼 જો તમને ડાઉનલોડ બટન પર ક્લિક કર્યા પછી આવું કંઈ જોવા મળે તો 👇🏼</p><br>
+  <img id="harm" src="harm.jpg">
+  <img id="harm" src="ht.jpg"><br><br>
+    <p id="di">☝🏼 ઉપરના ફોટામાં દ્વારા મળતી માહિતી મુજબ ગુગલ અનુસાર અમારું એપ્લિકેશન હાનિકારક હોય શકે, કેમ કે ગુગલ દ્વારા અમારા એપ્લિકેશના Source code (સોર્સ કોડ) ચકાસવામાં આવ્યા નથી,<br><br>👉🏼<span id="ex"> પરંતુ અમારું એપ્લિકેશનના Source code લીંબડી ITI ના કોપામાં ભણાવતા શિક્ષક દ્વારા ચેક કરવામાં આવેલ છે, અને તેમને આ એપ્લિકેશનને જોખમ મુક્ત જણાવેલ છે. </span></p>
+</div><br>
+
+<div id="dis">
+  <p><span id="r">App Details:- </span>આ એપ્લિકેશન ફિટરના દ્વિતિય વર્ષમાં અભ્યાસ કરતા વિદ્યર્થીઓ માટે છે, અને આ એપ્લિકેશનમાં તમને જોવા મળશે <big> 809</big> MCQ, અને એપ્લિકશન ઑફલાઈન છે અને <big>Ad-free</big> છે.</p>
+</div><br>
+
+<div id="cu">
+  <p>Contact Us</p>
+  <p>Email Id:- <span class="ml" id="bl">maladrakalpana@gmail.com</span></p>
+  <p>વોટ્સએપ પર મેસેજ કરવા માટે 👉🏼<span id="bl" onclick="window.open('https://wa.me/+919510591045', '_blank');"> અહીંયા ક્લિક કરો</span></p>
+</div>
+
+<div class="scrollbox">
+  <div class="scrollbox-item">
+    <div class="box co1">
+  <img src="ashish.png" alt="Ashish">
+  <div id="ash">
+    <p>Ashish (D.E.O.)</p>
+  </div>
+</div>
+<div class="box co2">
+  <img src="hardik.png" alt="Hardik">
+  <div id="har">
+    <p>Hardik (D.E.O.)</p>
+  </div>
+</div>
+<div class="box co3">
+  <img src="pradip.jpg" alt="Pradip">
+  <div id="pra">
+    <p>Pradip (D.E.O.)</p>
+  </div>
+</div>
+<div class="box co4">
+  <img src="raja.jpg" alt="Raja">
+  <div id="Rk">
+    <p>@E_Bot_Raja<br>(Coder)</p>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+<div class="scrollbox1">
+  <div class="scrollbox-item1">
+    <p id="more">More Applications Comming soon......</p>
+    </div></div>
+  <script>
+    function ex(){
+var c = document.getElementById("n");
+var cr = document.getElementById("pl");
+  if (c.innerHTML=="H") {
+  document.getElementById("hp").style.cssText = "height: 0; padding-bottom: 0;";
+  cr.innerHTML = "+";
+  c.innerHTML="S"
+  } else {
+document.getElementById("hp").style.cssText = "height: auto; padding-bottom: 3vw;";
+  cr.innerHTML = "×";
+  c.innerHTML="H"
+  }
+}
+  </script>
+</body>
+</html>
