@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/yB8gJ2w/logo.png" />
-  <link href='https://i.ibb.co/yB8gJ2w/logo.png' rel='image_src' />
+  <link rel="shortcut icon" type="image/png" href="https://itiappstore.w3spaces.com/logo.png" />
+  <link href='https://itiappstore.w3spaces.com/logo.png' rel='image_src' />
   <meta property="og:title" content="ITI App Store" />
   <meta property="og:description" content="An application that works without internet, is available for free and is ad-free" />
   <title>ITI App Store</title>
@@ -25,6 +25,34 @@
 
 body{
   font-family: serif;
+}
+
+video{
+  width:70vw;
+  height: auto;
+  margin-left: 15vw;
+}
+
+#ab{
+  margin-right: 20vw;
+}
+
+#ab>p{
+  font-size: 7vw;
+  font-weight: bold;
+}
+
+#ab>img{
+  margin-left: 10vw;
+  width: 40vw;
+  height: auto;
+}
+
+#dm {
+  color: blue;
+  font-size: 9vw;
+  font-weight: bold;
+  margin-left: 5vw;
 }
 
 #head{
@@ -199,15 +227,14 @@ body{
 }
 
 .scrollbox-item1{
-  display: flex;
+  display: inline-flex;
   position: relative;
-  width: 90%;
+  width: 100vw;
   height: auto;
-  margin: 0 2vw 0 0;
+  margin: 0 20vw 0 0;
   padding: 1vw;
   box-sizing: border-box;
   vertical-align: top;
-  white-space: normal;
   text-align: justify;
   overflow: wrap;
 }
@@ -304,11 +331,15 @@ body{
   <div id="head">
     <p>ITI App Store</p>
   </div><br><br><br>
+  <p id="dm">Demo:-</p>
+  <video preload="none" controls>
+    <source src="Demo.mp4" type="video/mp4">
+  </video><br><br>
 <div id="box">
 <img src="logo.png">
 &nbsp;&nbsp;<p>QAF_2 <br><span id="v">v1.0</span><br>Size: 13MB</p>
 </div>
-<button id="do" onclick="window.open('https://www.mediafire.com/file/32dhwo7izx3cbi7/QAF_2.apk/file','_blank');">Download</button><br /><br />
+<button id="do" onclick="window.open('https://drive.google.com/file/d/17JAClaw4i_M7tuYiByl3On2st1QZfmv_/view?usp=drivesdk');">Download</button><br /><br />
 
  <button id="iar" onclick="ex();"> 👨🏻‍💻 Information about risk :- <br><span id="pl">+</span></button>
  <div id="hp"><br>
@@ -325,7 +356,7 @@ body{
 <div id="cu">
   <p>Contact Us</p>
   <p>Email Id:- <span class="ml" id="bl">maladrakalpana@gmail.com</span></p>
-  <p>વોટ્સએપ પર મેસેજ કરવા માટે 👉🏼<span id="bl" onclick="window.open('https://wa.me/+919510591045','_blank');"> અહીંયા ક્લિક કરો</span></p>
+  <p>વોટ્સએપ પર મેસેજ કરવા માટે 👉🏼<span id="bl" onclick="window.open('https://wa.me/+919510591045', '_blank');"> અહીંયા ક્લિક કરો</span></p>
 </div>
 
 <div class="scrollbox">
@@ -359,7 +390,12 @@ body{
 </div>
 <div class="scrollbox1">
   <div class="scrollbox-item1">
-    <p id="more">More Applications Comming soon......</p>
+    <div id="ab">
+      <img src="logo.png">
+      <p>Name:- QAF_1</p>
+      <p>Publish Date:- 10/10/2023</p>
+    </div>
+    <p id="more">More<br>Applications<br>Comming<br>soon......</p>
     </div></div>
   <script>
     function ex(){
